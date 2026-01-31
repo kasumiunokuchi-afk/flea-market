@@ -14,7 +14,7 @@ class AddFirstLoginToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->boolean('first_login')->default(false);
+            $table->boolean('first_login')->default(true);
         });
 
     }
