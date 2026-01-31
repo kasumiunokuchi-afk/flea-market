@@ -106,6 +106,10 @@ php artisan db:seed
 - nginx : 1.21.1
 - fortify : 1.19.1
 
+## デフォルトユーザー情報
+- email: default@example.com
+- password: password
+
 ## ER 図
 
 ![ER図](doc/index.drawio.png)
