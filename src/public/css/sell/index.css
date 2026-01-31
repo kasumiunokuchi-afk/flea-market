@@ -1,0 +1,125 @@
+.form__inner {
+    display: flex;
+    justify-content: center;
+    margin-top: 48px;
+}
+
+.form {
+    width: 35vw;
+    margin-bottom: 30px;
+}
+
+/* タブレット */
+@media (min-width: 768px) and (max-width: 850px) {
+    .form {
+        width: 80vw;
+    }
+}
+
+.form__group {
+    margin-bottom: 30px;
+}
+
+.form__label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+
+.form__error-message {
+    color: #ff9494;
+}
+
+.form__btn {
+    margin: 60px auto 0;
+}
+
+.form__input input {
+    width: 100%;
+}
+
+.product-image-area {
+    width: 100%;
+    height: 100px;
+    border: 1px dotted #666;
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.category-select {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.category-checkbox input {
+    display: none;
+}
+
+.category-checkbox span {
+    display: inline-block;
+    padding: 3px 14px;
+    border: 1px solid #ff6b6b;
+    border-radius: 20px;
+    cursor: pointer;
+    background: #fff;
+    transition: all 0.2s;
+    font-size: 10px;
+    color: #ff6b6b;
+}
+
+/* 選択中 */
+.category-checkbox input:checked + span {
+    background: #ff6b6b;
+    color: #fff;
+    border-color: #ff6b6b;
+}
+
+.btn-image {
+    border: solid 1px #ff5900;
+    border-radius: 5px;
+    padding: 8px 30px;
+    text-align: center;
+    color: #ff5900;
+    font-weight: bold;
+}
+
+.subheading {
+    color: #666;
+    width: 100%;
+    border-bottom: 1px solid #999;
+    padding-bottom: 3px;
+    margin-top: 20px;
+}
+
+.form__input textarea {
+    width: 100%;
+}
+
+.price-field {
+    position: relative;
+}
+
+.price-field::before {
+    content: "¥";
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.price-input {
+    padding-left: 24px; /* ￥の分あける */
+}

@@ -1,0 +1,78 @@
+.profile-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: sticky;
+    top: 80px;
+    height: 140px;
+    background-color: #fff;
+    border-bottom: 1px solid #fff;
+}
+.profile-image,
+.profile-name,
+.profile-link {
+    margin: 20px;
+}
+
+.profile-image {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.profile-image img,
+.profile-image div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.no-image {
+    background-color: #999;
+    color: #fff;
+    font-weight: bold;
+    align-content: center;
+    text-align: center;
+}
+
+.profile-name {
+    width: 20vw;
+}
+
+.profile-link {
+    border: solid 1px #ff5900;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.profile-link a {
+    color: #ff5900;
+    font-weight: bold;
+}
+
+.list__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+/* PC */
+@media screen and (min-width: 1400px) and (max-width: 1540px) {
+    .list__cards {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* タブレット */
+@media (min-width: 768px) and (max-width: 850px) {
+    .list__cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.tabs {
+    top: 220px;
+    border-top: 1px solid #fff;
+}
